@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>QNT Millonario</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <aside class="ladder" id="ladder">
+    <h3>Escalera</h3>
+    <ul id="levels"></ul>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <img src="qnt_logo.png" alt="QNT Logo" class="logo">
+      <div class="title">
+        <h1>QNT Millonario</h1>
+        <p>Trabajo final — Gestión de Ventas Diferenciales</p>
+      </div>
+      <div class="lifelines">
+        <button id="lifeline-5050" class="lifeline">50/50</button>
+        <button id="sound-toggle" class="lifeline">🔊 Sonido</button>
+      </div>
+    </header>
+
+    <section id="start" class="card active">
+      <h2>¿Listo para convertirte en QNT Millonario?</h2>
+      <p>Responde 10 preguntas. Sube la escalera, gana dinero virtual y demuestra tus habilidades comerciales.</p>
+      <button id="start-btn" class="btn primary">Empezar</button>
+    </section>
+
+    <section id="game" class="card">
+      <div class="meta">
+        <div id="q-count">Pregunta 1/10</div>
+        <div id="prize">Dinero: <span id="money">$0</span></div>
+      </div>
+      <div id="question" class="question">Pregunta...</div>
+      <div id="choices" class="choices"></div>
+      <div class="controls">
+        <button id="next" class="btn" disabled>Siguiente</button>
+      </div>
+    </section>
+
+    <section id="result" class="card">
+      <h2>Resultado</h2>
+      <p id="final-money">$0</p>
+      <p id="final-msg"></p>
+      <button id="play-again" class="btn primary">Jugar otra vez</button>
+    </section>
+  </main>
+</div>
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
