@@ -7,7 +7,8 @@ window.QNT_QUESTIONS = [
       "Un elogio al producto",
       "Una técnica de cierre"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Las objeciones reflejan interés; tratarlas con empatía aumenta la probabilidad de cierre."
   },
   {
     "question": "¿Cuál es el objetivo de la rebancarización para el cliente?",
@@ -17,7 +18,8 @@ window.QNT_QUESTIONS = [
       "Evitar el contacto con bancos",
       "Vender más productos"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Recuperar el historial mejora la calificación crediticia y las oportunidades financieras."
   },
   {
     "question": "¿Qué significa omnicanalidad?",
@@ -27,7 +29,8 @@ window.QNT_QUESTIONS = [
       "Tener muchas sucursales",
       "Usar llamadas telefónicas únicamente"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Clientes usan varios canales; la omnicanalidad permite continuidad y mejor retención."
   },
   {
     "question": "¿Cuál es una señal de cliente analítico?",
@@ -37,7 +40,8 @@ window.QNT_QUESTIONS = [
       "Es evasivo",
       "Compra impulsivamente"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Los clientes analíticos valoran cifras claras: preparar datos acelera la decisión."
   },
   {
     "question": "¿Qué técnica ayuda a entender mejor al cliente y conectar emocionalmente?",
@@ -47,7 +51,8 @@ window.QNT_QUESTIONS = [
       "Imponer la venta",
       "Solo hablar del precio"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "La escucha activa reduce malentendidos y aumenta la confianza en el vendedor."
   },
   {
     "question": "¿Qué aporta la neuroventa al proceso comercial?",
@@ -57,7 +62,8 @@ window.QNT_QUESTIONS = [
       "Entender cómo funciona el cerebro para influir en la decisión",
       "Hacer ventas rápidas sin analizar al cliente"
     ],
-    "answer": 2
+    "answer": 2,
+    "fact": "La neuroventa usa señales emocionales y cognitivas; hasta el 95% de decisiones son inconscientes."
   },
   {
     "question": "¿Cuál es una práctica útil para manejar objeciones?",
@@ -67,7 +73,8 @@ window.QNT_QUESTIONS = [
       "Evitar la conversación",
       "Ofrecer descuentos sin analizar"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Empatía y opciones concretas suelen transformar una objeción en oportunidad."
   },
   {
     "question": "¿Qué significa SPIN Selling?",
@@ -77,7 +84,8 @@ window.QNT_QUESTIONS = [
       "Un tipo de cliente",
       "Un formato de publicidad"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "SPIN ayuda a descubrir necesidades profundas antes de ofrecer soluciones."
   },
   {
     "question": "¿Qué indicador refleja inconsistencia en la experiencia del cliente?",
@@ -87,7 +95,8 @@ window.QNT_QUESTIONS = [
       "Mayor recompra",
       "Mayor fidelización"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Tasa de abandono y quejas suelen indicar falta de coherencia entre canales."
   },
   {
     "question": "¿Qué debes hacer al identificar a un cliente desconfiado?",
@@ -97,7 +106,8 @@ window.QNT_QUESTIONS = [
       "Ignorar sus dudas",
       "Reducir el precio inmediatamente"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "La transparencia y pruebas sociales (casos) construyen confianza con clientes desconfiados."
   },
   {
     "question": "¿Qué canal poco tradicional para captar clientes es efectivo?",
@@ -107,7 +117,8 @@ window.QNT_QUESTIONS = [
       "Únicamente llamadas telefónicas",
       "Solo volantes físicos"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Los podcasts permiten profundizar temas y conectar con audiencias nicho."
   },
   {
     "question": "¿Qué hábito personal ayuda a manejar el cierre de mes estresante?",
@@ -117,7 +128,8 @@ window.QNT_QUESTIONS = [
       "Culpar al equipo",
       "Trabajar sin pausas"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Técnicas de respiración y pausas cortas mejoran la productividad en cierres."
   },
   {
     "question": "¿Qué debe transmitir la comunicación en todos los canales?",
@@ -127,7 +139,8 @@ window.QNT_QUESTIONS = [
       "Solo mensajes promocionales",
       "Mensajes contradictorios"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Coherencia en tono fortalece la percepción de marca y confianza del cliente."
   },
   {
     "question": "¿Cómo se puede reducir el riesgo al abordar un cliente sin conocer su perfil?",
@@ -137,7 +150,8 @@ window.QNT_QUESTIONS = [
       "Presionando con ofertas",
       "Ofreciendo solo descuentos"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Preguntas abiertas al inicio ayudan a perfilar rápido y personalizar la propuesta."
   },
   {
     "question": "¿Qué elemento ayuda a recuperar la confianza del cliente en rebancarización?",
@@ -147,7 +161,8 @@ window.QNT_QUESTIONS = [
       "Evitar contacto",
       "Prometer sin cumplir"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Acompañamiento y claridad en pasos generan seguridad y seguimiento del cliente."
   },
   {
     "question": "¿Qué mejora la retención y fidelización de cuentas?",
@@ -157,7 +172,8 @@ window.QNT_QUESTIONS = [
       "Mantener y fortalecer la relación a largo plazo",
       "Reducir comunicación"
     ],
-    "answer": 2
+    "answer": 2,
+    "fact": "Relaciones constantes generan más valor que captación constante de nuevos clientes."
   },
   {
     "question": "¿Cuál es un flujo efectivo durante la interacción?",
@@ -167,7 +183,8 @@ window.QNT_QUESTIONS = [
       "Preguntar poco y hablar mucho",
       "Evitar preguntas difíciles"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Preguntas relevantes guían al cliente a expresar su necesidad real, facilitando la solución."
   },
   {
     "question": "¿Qué actitud debe mantener un profesional para clientes clave?",
@@ -177,7 +194,8 @@ window.QNT_QUESTIONS = [
       "Contacto solo para nuevas ventas",
       "Dejar que cliente busque apoyo"
     ],
-    "answer": 1
+    "answer": 1,
+    "fact": "Constancia y personalización aumentan retención y probabilidad de recompra."
   }
 ];
 window.MONEY_LEVELS = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
