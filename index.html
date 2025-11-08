@@ -52,62 +52,6 @@
     </section>
   </main>
 </div>
-
-<!-- Mascot (brain) -->
-<div class="mascot mascot-hidden" id="mascot" aria-hidden="true">
-  <svg width="160" height="160" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="mascot-svg">
-    <g id="mascot-group" transform="translate(0,0)">
-      <path d="M40 80c0-22 18-40 40-40s40 18 40 40 18 40 0 40H40s-0-18 0-40z" fill="#ffd24a"/>
-      <circle cx="80" cy="70" r="6" fill="#012" />
-      <circle cx="120" cy="70" r="6" fill="#012" />
-      <path d="M75 90 q25 18 50 0" stroke="#012" stroke-width="4" fill="none" stroke-linecap="round"/>
-      <rect x="60" y="110" width="80" height="30" rx="8" fill="#00e5ff" />
-      <text x="100" y="132" text-anchor="middle" font-size="16" fill="#012" font-weight="700">QNT</text>
-    </g>
-  </svg>
-</div>
-
-<!-- Feedback modal -->
-<div id="feedback-modal" class="modal hidden">
-  <div class="modal-card">
-    <div class="modal-header"><strong id="fb-title">Respuesta incorrecta</strong></div>
-    <div class="modal-body">
-      <p id="fb-correct"></p>
-      <p id="fb-fact" class="fact"></p>
-      <div class="mascot-mini" aria-hidden="true">
-        <!-- small mascot icon -->
-        <svg width="80" height="80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path d="M40 80c0-22 18-40 40-40s40 18 40 40 18 40 0 40H40s-0-18 0-40z" fill="#ffd24a"/>
-          <circle cx="80" cy="70" r="5" fill="#012" />
-          <circle cx="120" cy="70" r="5" fill="#012" />
-        </svg>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button id="fb-close" class="btn primary">Entendido</button>
-    </div>
-  </div>
-</div>
-
-<!-- Roulette modal -->
-<div id="roulette-modal" class="modal hidden">
-  <div class="modal-card">
-    <h3>Ruleta de premios</h3>
-    <div class="roulette-wrapper">
-      <div id="roulette" class="roulette">
-        <div class="sector">Break +5</div>
-        <div class="sector">Almuerzo +5</div>
-        <div class="sector">Sigue intentando</div>
-        <div class="sector">Salida temprano</div>
-        <div class="sector">Llegada tarde</div>
-      </div>
-      <button id="spin-btn" class="btn primary">Girar</button>
-    </div>
-    <p id="roulette-result"></p>
-    <div style="text-align:right;margin-top:10px;"><button id="rb-close" class="btn">Cerrar</button></div>
-  </div>
-</div>
-
 <script src="questions.js"></script>
 <script src="app.js"></script>
 </body>
