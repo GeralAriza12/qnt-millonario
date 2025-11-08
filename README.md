@@ -1,7 +1,7 @@
 # 🎮 QNT MILLONARIO 
 ### 🧠 Trabajo Final — Gestión de Ventas Diferenciales
 
-![QNT Logo](./qnt_logo.jpg)
+![QNT Logo](./qnt_logo.png)
 
 ---
 
