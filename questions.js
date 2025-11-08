@@ -91,12 +91,12 @@ window.QNT_QUESTIONS = [
     "question": "¿Qué indicador refleja inconsistencia en la experiencia del cliente?",
     "options": [
       "Aumento de NPS",
-      "Tasa de abandono de carrito y quejas por información contradictoria",
+      "Quejas por información contradictoria",
       "Mayor recompra",
       "Mayor fidelización"
     ],
     "answer": 1,
-    "fact": "Tasa de abandono y quejas suelen indicar falta de coherencia entre canales."
+    "fact": "Las quejas suelen indicar falta de coherencia entre canales."
   },
   {
     "question": "¿Qué debes hacer al identificar a un cliente desconfiado?",
