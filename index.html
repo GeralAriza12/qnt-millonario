@@ -1,25 +1,33 @@
-<!-- SECCIÓN DEL JUEGO -->
-<div id="quiz-section">
-  <!-- Aquí van las preguntas -->
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QNT MILLONARIO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro" class="screen">
+    <h1>¡BIENVENIDOS A QNT MILLONARIO!</h1>
+    <button id="startBtn" class="hidden">Comenzar</button>
+  </div>
 
-<!-- SECCIÓN DE LA RULETA (OCULTA AL INICIO) -->
-<div id="wheel-section" style="display: none;">
-  <h2>¡Felicitaciones!</h2>
-  <p>Gira la ruleta y descubre tu premio 🎁</p>
-  <canvas id="wheelCanvas" width="400" height="400"></canvas>
-  <button id="spinBtn">Girar</button>
-</div>
+  <div id="game" class="hidden">
+    <h2 id="level">Nivel 1</h2>
+    <div id="question"></div>
+    <div id="answers"></div>
+    <div id="feedback"></div>
+    <button id="fiftyBtn">50/50</button>
+    <button id="nextBtn" class="hidden">Siguiente</button>
+    <div id="ladder"></div>
+  </div>
 
-<!-- SECCIÓN DE RECOMENDACIÓN (OCULTA AL INICIO) -->
-<div id="recommendation-section" style="display: none; text-align:center; color:white;">
-  <h2>¡Puedes mejorar!</h2>
-  <p>Te recomendamos reforzar los siguientes temas:</p>
-  <ul style="list-style:none; font-size:1.2rem;">
-    <li>🧠 Experiencia de ventas</li>
-    <li>💬 Manejo de objeciones</li>
-    <li>🎯 PNL y comunicación persuasiva</li>
-    <li>💼 Ventas convencionales y no convencionales</li>
-  </ul>
-  <button onclick="startGame()">Volver a intentar</button>
-</div>
+  <div id="roulette" class="hidden">
+    <h2 id="resultText"></h2>
+    <canvas id="wheelCanvas" width="400" height="400"></canvas>
+    <button id="spinBtn">Girar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

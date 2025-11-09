@@ -1,179 +1,39 @@
-/* ==== Estilos Generales ==== */
-* {
+body {
+  background: #0033a0;
+  color: white;
+  font-family: Poppins, sans-serif;
+  text-align: center;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
-body {
-  overflow: hidden;
-  height: 100vh;
-  background: linear-gradient(-45deg, #002b7f, #0043c2, #002b7f, #0043c2);
-  background-size: 400% 400%;
-  animation: gradientMove 12s ease infinite;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+.hidden { display: none; }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* ==== Intro ==== */
-.intro-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.logo {
-  width: 180px;
-  height: auto;
-}
-
-h1 {
-  font-size: 2rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.hidden {
-  display: none;
-}
-
-/* ==== Botón principal ==== */
 button {
-  background-color: #ffcc00;
+  background: #ffcc00;
   border: none;
-  color: #002b7f;
-  padding: 15px 30px;
-  font-weight: bold;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: transform 0.2s ease;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-
-/* Efecto de pulso suave */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-button.pulse {
-  animation: pulse 1.5s infinite;
-}
-
-/* ==== Juego ==== */
-#game {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.header {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.small-logo {
-  width: 60px;
-  height: auto;
-}
-
-.question-container {
-  max-width: 800px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-#question {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-#answers {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-#answers button {
-  background-color: #fff;
-  color: #002b7f;
+  padding: 10px 20px;
+  margin: 10px;
   border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-#answers button.correct {
-  background-color: #28a745;
-  color: white;
-}
+button:hover { background: #ffd633; }
 
-#answers button.wrong {
-  background-color: #dc3545;
-  color: white;
-}
+.correct { background: #4caf50 !important; }
+.wrong { background: #e53935 !important; }
 
-/* ==== Retroalimentación ==== */
-.feedback {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  font-style: italic;
-}
-
-/* ==== Escalera ==== */
-.ladder {
-  position: absolute;
-  right: 20px;
-  top: 100px;
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 8px;
-}
-
-.ladder div {
-  background-color: rgba(255, 255, 255, 0.15);
-  padding: 5px 10px;
+#ladder div {
+  padding: 5px;
+  border: 1px solid #fff;
+  margin: 3px auto;
+  width: 150px;
   border-radius: 5px;
 }
 
-.ladder .active {
-  background-color: #ffcc00;
-  color: #002b7f;
+#ladder .active {
+  background: #ffcc00;
+  color: #0033a0;
   font-weight: bold;
-}
-
-/* ==== Ruleta ==== */
-#roulette {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-#wheelCanvas {
-  border: 5px solid #fff;
-  border-radius: 50%;
-  background-color: #002b7f;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
