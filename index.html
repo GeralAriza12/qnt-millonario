@@ -1,114 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>QNT Millonario</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QNT MILLONARIO</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="wrap">
-  <aside class="ladder" id="ladder">
-    <h3>Puntaje</h3>
-    <ul id="levels"></ul>
-  </aside>
+  <!-- Intro -->
+  <div id="intro" class="intro-screen">
+    <img src="qnt_logo.png" alt="Logo QNT" class="logo" />
+    <h1>¡BIENVENIDOS A QNT MILLONARIO!</h1>
+    <button id="startBtn" class="hidden">EMPEZAR</button>
+    <audio id="introMusic" src="intro_music.mp3"></audio>
+  </div>
 
-  <main class="main">
-    <header class="topbar">
-      <img src="qnt_logo.png" alt="QNT Logo" class="logo">
-      <div class="title">
-        <h1>QNT Millonario</h1>
-        <p>Trabajo final — Gestión de Ventas Diferenciales</p>
-      </div>
-      <div class="lifelines">
-        <button id="lifeline-5050" class="lifeline">50/50</button>
-        <button id="sound-toggle" class="lifeline">🔊 Sonido</button>
-      </div>
-    </header>
+  <!-- Juego -->
+  <div id="game" class="hidden">
+    <div class="header">
+      <img src="qnt_logo.png" class="small-logo" alt="Logo QNT" />
+      <h2 id="level">Nivel 1</h2>
+    </div>
 
-    <section id="start" class="card active">
-      <h2>¿Listo para convertirte en QNT Millonario?</h2>
-      <p>Responde 10 preguntas. Sube la escalera, gana dinero virtual y demuestra tus habilidades comerciales.</p>
-      <button id="start-btn" class="btn primary">Empezar</button>
-    </section>
-
-    <section id="game" class="card">
-      <div class="meta">
-        <div id="q-count">Pregunta 1/10</div>
-        <div id="prize">Dinero: <span id="money">$0</span></div>
-      </div>
-      <div id="question" class="question">Pregunta...</div>
-      <div id="choices" class="choices"></div>
+    <div class="question-container">
+      <p id="question"></p>
+      <div id="answers"></div>
       <div class="controls">
-        <button id="next" class="btn" disabled>Siguiente</button>
+        <button id="fiftyBtn">50/50</button>
+        <button id="nextBtn" class="hidden">Siguiente</button>
       </div>
-    </section>
-
-    <section id="result" class="card">
-      <h2>Resultado</h2>
-      <p id="final-money">$0</p>
-      <p id="final-msg"></p>
-      <button id="play-again" class="btn primary">Jugar otra vez</button>
-    </section>
-  </main>
-</div>
-
-<!-- Mascot (brain) -->
-<div class="mascot mascot-hidden" id="mascot" aria-hidden="true">
-  <svg width="160" height="160" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="mascot-svg">
-    <g id="mascot-group" transform="translate(0,0)">
-      <path d="M40 80c0-22 18-40 40-40s40 18 40 40 18 40 0 40H40s-0-18 0-40z" fill="#ffd24a"/>
-      <circle cx="80" cy="70" r="6" fill="#012" />
-      <circle cx="120" cy="70" r="6" fill="#012" />
-      <path d="M75 90 q25 18 50 0" stroke="#012" stroke-width="4" fill="none" stroke-linecap="round"/>
-      <rect x="60" y="110" width="80" height="30" rx="8" fill="#00e5ff" />
-      <text x="100" y="132" text-anchor="middle" font-size="16" fill="#012" font-weight="700">QNT</text>
-    </g>
-  </svg>
-</div>
-
-<!-- Feedback modal -->
-<div id="feedback-modal" class="modal hidden">
-  <div class="modal-card">
-    <div class="modal-header"><strong id="fb-title">Respuesta incorrecta</strong></div>
-    <div class="modal-body">
-      <p id="fb-correct"></p>
-      <p id="fb-fact" class="fact"></p>
-      <div class="mascot-mini" aria-hidden="true">
-        <!-- small mascot icon -->
-        <svg width="80" height="80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path d="M40 80c0-22 18-40 40-40s40 18 40 40 18 40 0 40H40s-0-18 0-40z" fill="#ffd24a"/>
-          <circle cx="80" cy="70" r="5" fill="#012" />
-          <circle cx="120" cy="70" r="5" fill="#012" />
-        </svg>
-      </div>
+      <p id="feedback" class="feedback"></p>
     </div>
-    <div class="modal-footer">
-      <button id="fb-close" class="btn primary">Entendido</button>
-    </div>
+
+    <div class="ladder" id="ladder"></div>
   </div>
-</div>
 
-<!-- Roulette modal -->
-<div id="roulette-modal" class="modal hidden">
-  <div class="modal-card">
-    <h3>Ruleta de premios</h3>
-    <div class="roulette-wrapper">
-      <div id="roulette" class="roulette">
-        <div class="sector">Break +5</div>
-        <div class="sector">Almuerzo +5</div>
-        <div class="sector">Sigue intentando</div>
-        <div class="sector">Salida temprano</div>
-        <div class="sector">Llegada tarde</div>
-      </div>
-      <button id="spin-btn" class="btn primary">Girar</button>
-    </div>
-    <p id="roulette-result"></p>
-    <div style="text-align:right;margin-top:10px;"><button id="rb-close" class="btn">Cerrar</button></div>
+  <!-- Ruleta Final -->
+  <div id="roulette" class="hidden">
+    <h2>¡Felicitaciones!</h2>
+    <p>Gira la ruleta y descubre tu premio 🎁</p>
+    <canvas id="wheelCanvas" width="400" height="400"></canvas>
+    <button id="spinBtn">Girar</button>
+    <p id="resultText"></p>
   </div>
-</div>
 
-<script src="questions.js"></script>
-<script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
