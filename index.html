@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QNT MILLONARIO</title>
+  <title>QNT Millonario</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="intro" class="screen">
+  <div id="intro" class="intro screen">
     <h1>¡BIENVENIDOS A QNT MILLONARIO!</h1>
-    <button id="startBtn" class="hidden">Comenzar</button>
+    <button id="startBtn" class="hidden">EMPEZAR YA</button>
   </div>
 
-  <div id="game" class="hidden">
-    <h2 id="level">Nivel 1</h2>
+  <div id="game" class="hidden screen">
+    <div id="level"></div>
     <div id="question"></div>
     <div id="answers"></div>
     <div id="feedback"></div>
@@ -22,10 +22,21 @@
     <div id="ladder"></div>
   </div>
 
-  <div id="roulette" class="hidden">
-    <h2 id="resultText"></h2>
+  <div id="roulette" class="hidden screen">
     <canvas id="wheelCanvas" width="400" height="400"></canvas>
-    <button id="spinBtn">Girar</button>
+    <button id="spinBtn">GIRAR RULETA</button>
+    <p id="resultText"></p>
+  </div>
+
+  <div id="improve" class="hidden screen">
+    <h2>PUEDES MEJORAR 💪</h2>
+    <p>Te recomendamos reforzar los siguientes temas:</p>
+    <ul>
+      <li>Comunicación efectiva y empatía</li>
+      <li>Escucha activa con clientes</li>
+      <li>Gestión de objeciones</li>
+      <li>Uso de neuroventas</li>
+    </ul>
   </div>
 
   <script src="script.js"></script>

@@ -1,39 +1,37 @@
 body {
-  background: #0033a0;
-  color: white;
-  font-family: Poppins, sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(-45deg, #002b80, #003cb3, #0047cc, #005ce6);
+  background-size: 400% 400%;
 }
-
-.hidden { display: none; }
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 button {
-  background: #ffcc00;
+  background: #0043c2;
+  color: white;
+  padding: 12px 24px;
   border: none;
-  padding: 10px 20px;
+  border-radius: 10px;
   margin: 10px;
-  border-radius: 8px;
-  font-weight: bold;
+  font-size: 18px;
   cursor: pointer;
+  transition: transform 0.2s;
 }
-
-button:hover { background: #ffd633; }
-
-.correct { background: #4caf50 !important; }
-.wrong { background: #e53935 !important; }
-
-#ladder div {
-  padding: 5px;
-  border: 1px solid #fff;
-  margin: 3px auto;
-  width: 150px;
-  border-radius: 5px;
-}
-
-#ladder .active {
-  background: #ffcc00;
-  color: #0033a0;
-  font-weight: bold;
-}
+button:hover { transform: scale(1.05); }
+.hidden { display: none; }
+.screen { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; }
+.correct { background-color: #28a745 !important; }
+.wrong { background-color: #dc3545 !important; }
+#ladder { position: absolute; top: 10px; right: 20px; text-align: right; }
+#ladder div.active { color: yellow; font-weight: bold; }
+#question { font-size: 22px; margin: 20px; max-width: 80%; }
+#answers button { display: block; width: 300px; margin: 10px auto; }
