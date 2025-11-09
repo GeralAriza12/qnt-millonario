@@ -16,6 +16,7 @@ const roulette = document.getElementById("roulette");
 const spinBtn = document.getElementById("spinBtn");
 const resultText = document.getElementById("resultText");
 const wheelCanvas = document.getElementById("wheelCanvas");
+const recommendation = document.getElementById("recommendation");
 const ctx = wheelCanvas.getContext("2d");
 
 let currentQuestion = 0;
@@ -203,10 +204,23 @@ nextBtn.addEventListener("click", () => {
   if (currentQuestion < 10) {
     showQuestion();
   } else {
-    game.classList.add("hidden");
-    showRoulette();
+    endGame();
   }
 });
+
+// ==== Fin del juego ====
+function endGame() {
+  game.classList.add("hidden");
+
+  if (score >= 9) {
+    // Mostrar ruleta
+    roulette.classList.remove("hidden");
+    drawWheel();
+  } else {
+    // Mostrar mensaje motivacional
+    recommendation.classList.remove("hidden");
+  }
+}
 
 // ==== 50/50 ====
 fiftyBtn.addEventListener("click", () => {
@@ -245,11 +259,6 @@ const prizes = [
   "5 min salida temprano 🕔",
   "5 min llegada tarde 😎"
 ];
-
-function showRoulette() {
-  roulette.classList.remove("hidden");
-  drawWheel();
-}
 
 function drawWheel() {
   const arc = (2 * Math.PI) / prizes.length;
